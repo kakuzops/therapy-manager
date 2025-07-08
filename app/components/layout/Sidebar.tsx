@@ -54,6 +54,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
           { icon: Calendar, label: 'My Appointments', path: '/appointments' },
           { icon: Clock, label: 'Book Appointment', path: '/book' },
           { icon: User, label: 'My Profile', path: '/profile' },
+          { icon: Settings, label: 'Settings', path: '/settings' },
         ];
       default:
         return [];

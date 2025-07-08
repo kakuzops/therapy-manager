@@ -4,6 +4,8 @@ export interface User {
   name: string;
   role: 'super_admin' | 'therapist' | 'patient';
   avatar?: string;
+  phone?: string;
+  bio?: string;
   createdAt: Date;
   isEmailVerified: boolean;
   therapistId?: string; // For patients - which therapist they're assigned to
