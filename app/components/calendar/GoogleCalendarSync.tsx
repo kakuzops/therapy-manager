@@ -15,15 +15,7 @@ import {
 } from '@/components/ui/dialog';
 import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
 import { useCalendar } from '@/app/contexts/CalendarContext';
-import {
-  Sync,
-  ExternalLink,
-  CheckCircle,
-  AlertCircle,
-  Settings,
-  Unlink,
-  Calendar
-} from 'lucide-react';
+import { FolderSync as Sync, ExternalLink, CheckCircle, AlertCircle, Settings, Unlink, Calendar } from 'lucide-react';
 
 export const GoogleCalendarSync: React.FC = () => {
   const { 

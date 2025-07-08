@@ -10,20 +10,7 @@ import { AppointmentModal } from './AppointmentModal';
 import { GoogleCalendarSync } from './GoogleCalendarSync';
 import { useAuth } from '@/app/contexts/AuthContext';
 import { useCalendar } from '@/app/contexts/CalendarContext';
-import {
-  Calendar,
-  Plus,
-  Filter,
-  Download,
-  Upload,
-  Settings,
-  Clock,
-  Users,
-  CheckCircle,
-  AlertCircle,
-  Sync,
-  ExternalLink
-} from 'lucide-react';
+import { Calendar, Plus, Filter, Download, Upload, Settings, Clock, Users, CheckCircle, AlertCircle, FolderSync as Sync, ExternalLink } from 'lucide-react';
 import { format, startOfWeek, endOfWeek, startOfMonth, endOfMonth } from 'date-fns';
 
 export const CalendarContent: React.FC = () => {
