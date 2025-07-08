@@ -34,6 +34,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
           { icon: Users, label: 'All Therapists', path: '/therapists' },
           { icon: User, label: 'All Patients', path: '/patients' },
           { icon: Calendar, label: 'All Appointments', path: '/appointments' },
+          { icon: Calendar, label: 'Calendar', path: '/calendar' },
           { icon: FileText, label: 'Reports', path: '/reports' },
           { icon: Settings, label: 'System Settings', path: '/settings' },
         ];
@@ -44,6 +45,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
           { icon: UserPlus, label: 'Add Patient', path: '/patients/new' },
           { icon: Calendar, label: 'My Schedule', path: '/schedule' },
           { icon: CalendarDays, label: 'Appointments', path: '/appointments' },
+          { icon: Calendar, label: 'Calendar', path: '/calendar' },
           { icon: FileText, label: 'Patient Notes', path: '/notes' },
           { icon: Settings, label: 'My Settings', path: '/settings' },
         ];
@@ -53,6 +55,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
           { icon: Stethoscope, label: 'My Therapist', path: '/therapist' },
           { icon: Calendar, label: 'My Appointments', path: '/appointments' },
           { icon: Clock, label: 'Book Appointment', path: '/book' },
+          { icon: Calendar, label: 'Calendar', path: '/calendar' },
           { icon: User, label: 'My Profile', path: '/profile' },
           { icon: Settings, label: 'Settings', path: '/settings' },
         ];
