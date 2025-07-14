@@ -34,13 +34,13 @@ export const LoginForm: React.FC = () => {
           <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-primary rounded-full">
             <Stethoscope className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h1 className="text-3xl font-bold">TherapyScheduler</h1>
+          <h1 className="text-3xl font-bold">Therapy Scheduler</h1>
           <p className="text-muted-foreground">Patient Management System</p>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle>Welcome Back</CardTitle>
+            <CardTitle>Seja Bem vindo</CardTitle>
             <CardDescription>
               Sign in to your account to continue
             </CardDescription>

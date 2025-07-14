@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { useAuth } from './contexts/AuthContext';
-// import { LoginForm } from './components/auth/LoginForm';
 import { LoginForm } from '@/app/(panel)/dashboard/components/auth/LoginForm';
-import { DashboardLayout } from '@/app/(panel)/dashboard/components/dashboard/DashboardLayout';
+import { DashboardLayout } from '@/app/components/dashboard/DashboardLayout';
 import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 
 export default function Home() {

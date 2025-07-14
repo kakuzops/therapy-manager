@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { useAuth } from '@/app/contexts/AuthContext';
-import { Header } from '@/app/components/layout/Header';
-import { Sidebar } from '@/app/components/layout/Sidebar';
-import { CalendarContent } from '@/app/components/calendar/CalendarContent';
-import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { Header } from '@/app/(panel)/dashboard/components/layout/Header';
+import { Sidebar } from '@/app/(panel)/dashboard/components/layout/Sidebar';
+import { CalendarContent } from '@/app/(panel)/dashboard/components/calendar/CalendarContent';
+import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 import { redirect } from 'next/navigation';
 
 export default function CalendarPage() {

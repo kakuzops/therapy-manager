@@ -5,9 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { CalendarView } from './CalendarView';
-import { AppointmentModal } from './AppointmentModal';
-import { GoogleCalendarSync } from './GoogleCalendarSync';
+import { CalendarView } from '@/app/(panel)/dashboard/components/calendar/CalendarView';
+import { AppointmentModal } from '@/app/(panel)/dashboard/components/calendar/AppointmentModal';
+import { GoogleCalendarSync } from '@/app/(panel)/dashboard/components/calendar/GoogleCalendarSync';
 import { useAuth } from '@/app/contexts/AuthContext';
 import { useCalendar } from '@/app/contexts/CalendarContext';
 import { Calendar, Plus, Filter, Download, Upload, Settings, Clock, Users, CheckCircle, AlertCircle, FolderSync as Sync, ExternalLink } from 'lucide-react';
@@ -90,7 +90,7 @@ export const CalendarContent: React.FC = () => {
   const handleAppointmentSave = async (appointmentData: any) => {
     try {
       if (selectedAppointment) {
-        await updateAppointment(selectedAppointment.id, appointmentData);
+        await updateAppointment(selectedAppointment, appointmentData);
       } else {
         await createAppointment(appointmentData);
       }
@@ -274,7 +274,7 @@ export const CalendarContent: React.FC = () => {
             setSelectedAppointment(null);
           }}
           onSave={handleAppointmentSave}
-          onDelete={selectedAppointment ? () => handleAppointmentDelete(selectedAppointment.id) : undefined}
+          onDelete={selectedAppointment ? () => handleAppointmentDelete(selectedAppointment) : undefined}
           userRole={user?.role || 'patient'}
         />
       )}

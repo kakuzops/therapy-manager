@@ -13,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from '@/components/ui/separator';
 import { useAuth } from '@/app/contexts/AuthContext';
 import { useTheme } from '@/app/contexts/ThemeContext';
-import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 import {
   Settings,
   User,

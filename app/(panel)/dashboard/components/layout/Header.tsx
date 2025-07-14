@@ -54,11 +54,13 @@ export const Header: React.FC = () => {
       <div className="flex h-16 items-center px-6">
         <div className="flex items-center space-x-3">
           <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
-            <Stethoscope className="w-5 h-5 text-primary-foreground" />
+            <a href="/dashboard">
+              <Stethoscope className="w-5 h-5 text-primary-foreground" />
+            </a>
           </div>
           <div>
-            <h1 className="text-xl font-bold">TherapyScheduler</h1>
-            <p className="text-xs text-muted-foreground">Patient Management System</p>
+            <h1 className="text-xl font-bold">Therapy Scheduler</h1>
+            <p className="text-xs text-muted-foreground">Therapist Management</p>
           </div>
         </div>
         
@@ -111,9 +113,11 @@ export const Header: React.FC = () => {
                 <User className="mr-2 h-4 w-4" />
                 <span>Profile</span>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Settings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
+              <DropdownMenuItem asChild>
+                <a href="/settings">
+                  <Settings className="mr-2 h-4 w-4" />
+                  <span>Settings</span>
+                </a>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={logout}>

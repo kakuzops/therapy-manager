@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { useAuth } from '@/app/contexts/AuthContext';
-import { Header } from '@/app/components/layout/Header';
-import { Sidebar } from '@/app/components/layout/Sidebar';
+import { Header } from '@/app/(panel)/dashboard/components/layout/Header';
+import { Sidebar } from '@/app/(panel)/dashboard/components/layout/Sidebar';
 import { SuperAdminDashboard } from './SuperAdminDashboard';
 import { TherapistDashboard } from './TherapistDashboard';
 import { PatientDashboard } from './PatientDashboard';

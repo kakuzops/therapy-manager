@@ -3,7 +3,7 @@
 import React from 'react';
 import { useAuth } from '@/app/contexts/AuthContext';
 import { DashboardLayout } from '@/app/components/dashboard/DashboardLayout';
-import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 import { redirect } from 'next/navigation';
 
 export default function DashboardPage() {

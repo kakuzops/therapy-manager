@@ -31,21 +31,20 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
       case 'super_admin':
         return [
           { icon: BarChart3, label: 'Dashboard', path: '/dashboard' },
-          { icon: Users, label: 'All Therapists', path: '/therapists' },
-          { icon: User, label: 'All Patients', path: '/patients' },
+          { icon: Users, label: 'All Therapists', path: '/dashboard/therapist' },
+          { icon: User, label: 'All Patients', path: '/dashboard/patients' },
           { icon: Calendar, label: 'Calendar', path: '/dashboard/calendar' },
-          { icon: FileText, label: 'Reports', path: '/reports' },
-          { icon: Settings, label: 'System Settings', path: '/settings' },
+          { icon: FileText, label: 'Reports', path: '/dashboard/reports' },
+          { icon: Settings, label: 'System Settings', path: '/dashboard/settings' },
         ];
       case 'therapist':
         return [
           { icon: BarChart3, label: 'Dashboard', path: '/dashboard' },
-          { icon: Users, label: 'My Patients', path: '/patients' },
-          { icon: UserPlus, label: 'Add Patient', path: '/patients/new' },
-          { icon: Calendar, label: 'My Schedule', path: '/schedule' },
-          { icon: Calendar, label: 'Calendar', path: '/calendar' },
-          { icon: FileText, label: 'Patient Notes', path: '/notes' },
-          { icon: Settings, label: 'My Settings', path: '/settings' },
+          { icon: Users, label: 'My Patients', path: '/dashboard/patients' },
+          { icon: Calendar, label: 'My Schedule', path: '/dashboard/schedule' },
+          { icon: Calendar, label: 'Calendar', path: '/dashboard/calendar' },
+          { icon: FileText, label: 'Patient Notes', path: '/dashboard/notes' },
+          { icon: Settings, label: 'My Settings', path: '/dashboard/settings' },
         ];
       case 'patient':
         return [

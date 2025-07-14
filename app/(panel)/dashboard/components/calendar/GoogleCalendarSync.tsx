@@ -13,7 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 import { useCalendar } from '@/app/contexts/CalendarContext';
 import { FolderSync as Sync, ExternalLink, CheckCircle, AlertCircle, Settings, Unlink, Calendar } from 'lucide-react';
 

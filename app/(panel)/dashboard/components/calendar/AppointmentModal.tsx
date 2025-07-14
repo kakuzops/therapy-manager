@@ -16,7 +16,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { LoadingSpinner } from '@/app/(panel)/dashboard/components/ui/loading-spinner';
 import {
   Select,
   SelectContent,
